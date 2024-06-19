@@ -5,7 +5,7 @@
 }
 :root {
   --text-color: #808ac5;
-  --bg: #ffd1cf;
+  --bg: #ac9998;
   --button-cl: #fab337;
   --pure-white: #ffffff;
   --card-bg: #21183c;
@@ -48,7 +48,8 @@ input[type="checkbox"]:checked ~ label {
   color: white;
   transition: 0.3s ease;
 }
-.forplus {
+.forplus,
+.forplus2 {
   margin-top: 70px;
   display: flex;
   justify-content: center;
@@ -64,7 +65,8 @@ input[type="checkbox"]:checked ~ label {
   right: -70px;
   transition: 0.3s ease;
 }
-.forplus:hover {
+.forplus:hover,
+.forplus2:hover {
   background-color: #fab337;
   color: #21183c;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -131,17 +133,34 @@ button {
     transition: background 0.3s linear;
   }
 }
+.white {
+  color: black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 150%;
+  background-color: white;
+}
 button:hover {
   opacity: 0.6;
 }
+.hide {
+  display: none;
+}
+
+.yourfile {
+  visibility: hidden;
+  font-family: monospace;
+  font-size: 20px;
+}
 @media (max-width: 656px) {
   body {
-    height: fit-content;
     padding: 3px 0;
   }
   section {
     flex-direction: column;
     gap: 1rem;
+
+    margin-left: auto;
   }
   .forplus {
     margin-top: 1rem;
